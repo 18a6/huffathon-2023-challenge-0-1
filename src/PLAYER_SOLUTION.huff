@@ -1,9 +1,38 @@
 #include "utils/CREATOR.huff"
 
-#define macro STACKIT() = takes (0) returns (11) {
-    /**
+#define constant N = 0x69
 
-     <<insert solution here>>
+#define macro STACKIT() = takes (0) returns (11) {
+    // worst case solution lmao
+    caller
+    [N]
+    shr
+    [N]
+    caller
+    [N]
+    shr
+    number
+    [N]
+    shr
+    [N]
+    timestamp
+    [N]
+    shr
+    [N]
+    caller
+    [N]
+    shr
+    number
+    [N]
+    shr
+    caller
+    [N]
+    shr
+    timestamp
+    [N]
+    shr
+
+    /**   
 
      final stack: [
         timestamp >> 0x69,
